@@ -341,9 +341,8 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
-    sensors.dynamic_sensor_hal
-    #temp remove, breaks touchscreen because of incomplete kernel drivers
-    #sensors.motorola.v2
+    sensors.dynamic_sensor_hal \
+    sensors.motorola.v2
 
 $(foreach sku, parrot ravelin, \
     $(eval PRODUCT_COPY_FILES += \
