@@ -1,0 +1,32 @@
+[
+  {
+    "repository": "EvolutionX-Cuscoi/android_hardware_motorola",
+    "target_path": "hardware/motorola",
+    "remote": "github",
+    "revision": "17"
+  },
+  {
+    "repository": "EvolutionX-Cuscoi/android_kernel_motorola_sm7435",
+    "target_path": "kernel/motorola/sm7435",
+    "remote": "github",
+    "revision": "17"
+  },
+  {
+    "repository": "EvolutionX-Cuscoi/android_kernel_motorola_sm7435-modules",
+    "target_path": "kernel/motorola/sm6450-modules",
+    "remote": "github",
+    "revision": "17"
+  },
+  {
+    "repository": "EvolutionX-Cuscoi/android_kernel_motorola_sm7435-devicetrees",
+    "target_path": "kernel/motorola/sm6450-devicetrees",
+    "remote": "github",
+    "revision": "17"
+  },
+  {
+    "repository": "EvolutionX-Cuscoi/proprietary_vendor_motorola_sm7435-common",
+    "target_path": "vendor/motorola/sm7435-common",
+    "remote": "github",
+    "revision": "17"
+  }
+]
