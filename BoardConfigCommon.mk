@@ -86,6 +86,7 @@ TARGET_KERNEL_NO_GCC := true
 
 TARGET_KERNEL_SOURCE := kernel/motorola/sm7435
 TARGET_KERNEL_VERSION := 6.6
+TARGET_KERNEL_CLANG_VERSION := r510928
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/parrot_perf.config \
