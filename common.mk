@@ -490,6 +490,14 @@ $(foreach variant,$(TARGET_WIFI_VARIANTS), \
         $(LOCAL_PATH)/configs/wifi/$(variant)/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/$(variant)/WCNSS_qcom_cfg.ini) \
 )
 
+ifneq ($(filter adrastea,$(TARGET_WIFI_VARIANTS)),)
+PRODUCT_PACKAGES += \
+    firmware_adrastea_WCNSS_mot_cfg.ini_symlink
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wifi/adrastea/WCNSS_mot_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/adrastea/WCNSS_mot_cfg.ini
+endif
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
