@@ -1,0 +1,11 @@
+on post-fs-data
+    write /sys/class/leds/vibrator/trigger "transient"
+    chown system system /sys/class/leds/vibrator/activate
+    chown system system /sys/class/leds/vibrator/duration
+    chown system system /sys/class/leds/vibrator/state
+    chown system system /sys/class/leds/vibrator/vmax_mv
+
+service vendor.vibrator.moto_ldo /vendor/bin/hw/android.hardware.vibrator-service.moto_ldo
+    class hal
+    user system
+    group system input
